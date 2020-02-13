@@ -1,0 +1,15 @@
+#
+# helix configuration for local development
+#
+version: 1
+
+definitions:
+  defaults:
+    - &defaultRepo "ssh://git@github.com/ramboz/hlx-demo.git"
+
+strains:
+  - name: default
+    code: ssh://git@github.com/ramboz/hlx-demo.git#master
+    content: ssh://git@github.com/ramboz/hlx-demo.git#master
+    static: ssh://git@github.com/ramboz/hlx-demo.git/htdocs#master
+    package: ramboz/ff8594ad0112ddf2c23a141fbf1a55f778cee169
